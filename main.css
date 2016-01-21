@@ -1,0 +1,126 @@
+div#main {
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+.navBar {
+  background-color: #FFB4B0;
+  border: 2px solid black;
+  margin: 2.5% auto 1.5% auto;
+  width: 90%;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: red;
+}
+
+a:visited {
+  color: black;
+}
+
+.navBar li {
+    list-style: none;
+    display: inline;
+}
+
+.midLeftFormBox {
+  float: left;
+  background-color: #4DD7FA;
+  box-sizing: border-box;
+  margin-left: .75%;
+  width: 27.25%;
+  border: 2px solid black;
+  margin: 0 auto 0 auto;
+  height: 364px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;  
+}
+
+select {
+  width: 140px;
+}
+
+.midLeftFormBox select, .midLeftFormBox input {
+  margin: .5em 0 0 0;
+}
+
+.list1 {
+    display: inline;
+    list-style-type: none;
+    float: left;
+    padding: 0;
+    margin: .5em 0 0 .5em;
+}
+
+.list2 {
+    display: inline;
+    list-style-type: none;
+    float: left;
+    padding: 0;
+    margin: .5em 0 0 2.5em;
+}
+
+.list1 li, .list2 li {
+  margin-bottom: .25em;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+    margin: 1.25em 0 0 0;
+}
+
+.filterButton {
+  display: block;
+  width: 3em;
+  background: lightgrey;
+  border: 2px solid black;
+  color: black;
+  text-align: center;
+  font:1.25em/25px "Helvetica Neue", sans-serif;
+  border-radius: 7px;
+  margin: 1em auto 0 auto;
+}
+
+a.filterButton {
+  text-decoration: none;
+}
+
+.midRightFormBox {
+  float: right;
+  background-color: #FEFAC0;
+  box-sizing: border-box;
+  width: 71.25%;
+  margin-left: .75%;
+  border: 2px solid black;
+  height: 364px;
+}
+
+h2.midRightFormBox {
+  padding-left: 40px; 
+}
+
+p.midRightFormBox {
+  padding-left: 40px;
+}
+
+.midRightFormBox h2 {
+  color: #785616;
+  margin-left: 5%;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.midRightFormBox p {
+  margin-left: 5%;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8em;
+}

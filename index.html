@@ -1,13 +1,69 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
+  <nav class="navBar">
+    <ul>
+      <li><a href="link.com">View Music</a></li> |
+      <li><a href="link.com">Add Music</a></li> |
+      <li><a href="http://www.ink.com">Profile</a></li>
+    </ul>
+  </nav>
+  <div id="main">
+    <section class="midLeftFormBox">
+      <form>
+       <fieldset>
+         <label for="Song">Song Length:</label>
+         <input type="range">
+         <label for="Artist">Artist:</label>
+         <select>
+            <option>Tom Petty</option>
+            <option>The Ramones</option>
+            <option>The Strokes</option>
+            <option>The Eagles of Death Metal</option>
+            <option>The Electric Six</option>
+          </select>
+        <label for="Album">Album:</label>
+          <select>
+            <option>Eponymous</option>
+            <option>Brain Drain</option>
+            <option>Is This It</option>
+            <option>Fire!</option>
+            <option>Love, Peace, Metal</option>
+          </select>
+        <label for="Genre">Genre:</label>
+          <ul class="list1">
+            <li><input type="checkbox">Rock</li>
+            <li><input type="checkbox">Pop</li>
+            <li><input type="checkbox">Blues</li>
+          </ul>
+          <ul class="list2">
+            <li><input type="checkbox">Classical</li>
+            <li><input type="checkbox">Jazz</li>        
+            <li><input type="checkbox">Hip hop</li>
+          </ul>
+        </fieldset>
+        <a href="http://www.google.com" class="filterButton">Filter</a>
 
-
+      </form>
+    </section>  
+    <section class="midRightFormBox">
+        <h2>Song Name</h2>
+        <p>Artist Name | Album Name | Genre</p>
+        <h2>Song Name</h2>
+        <p>Artist Name | Album Name | Genre</p>
+        <h2>Song Name</h2>
+        <p>Artist Name | Album Name | Genre</p>
+        <h2>Song Name</h2>
+        <p>Artist Name | Album Name | Genre</p>
+    </section>
+</div>
 </body>
 </html>
