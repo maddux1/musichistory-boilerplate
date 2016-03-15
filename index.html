@@ -8,49 +8,57 @@
   <body>
     <nav class="navBar">
       <ul>
-        <li><a href="JavaScript:void(0)" id="list-Music-View">List Music</a></li> |
-        <li><a href="JavaScript:void(0)" id="add-Music-View">Add Music</a></li> |
+        <li><a href="JavaScript:void(0)" id="listMusicLink">List Music</a></li> |
+        <li><a href="JavaScript:void(0)" id="addMusicLink">Add Music</a></li>
       </ul>
     </nav>
     <div id="main">
-      <section id="leftColumn">
-        <form>
-          <fieldset>
-          <label for="Song">Song Length:</label>
-          <input type="range">
-            <label for="Artist">Artist:</label>
-            <select>
-            <option>Tom Petty</option>
-            <option>The Ramones</option>
-            <option>The Strokes</option>
-            <option>The Eagles of Death Metal</option>
-            <option>The Electric Six</option>
-            </select>
-          <label for="Album">Album:</label>
-            <select>
-            <option>Eponymous</option>
-            <option>Brain Drain</option>
-            <option>Is This It</option>
-            <option>Fire!</option>
-            <option>Love, Peace, Metal</option>
-            </select>
-          <label for="Genre">Genre:</label>
-            <ul class="list1">
-              <li><input type="checkbox">Rock</li>
-              <li><input type="checkbox">Pop</li>
-              <li><input type="checkbox">Blues</li>
+      <div id="addMusicView">
+        <p>Song name</p><input type="text" class="addField">
+        <p>Artist</p><input type="text" class="addField">
+        <p>Album</p><input type="text" class="addField">
+       <button id="addButton"><span class="buttonText">Add</span></button>
+      </div>
+      <div id="listMusicView">
+        <section id="leftColumn">
+          <form>
+            <fieldset>
+            <label for="Song">Song Length:</label>
+            <input type="range">
+              <label for="Artist">Artist:</label>
+              <select>
+              <option>Tom Petty</option>
+              <option>The Ramones</option>
+              <option>The Strokes</option>
+              <option>The Eagles of Death Metal</option>
+              <option>The Electric Six</option>
+              </select>
+            <label for="Album">Album:</label>
+              <select>
+              <option>Eponymous</option>
+              <option>Brain Drain</option>
+              <option>Is This It</option>
+              <option>Fire!</option>
+              <option>Love, Peace, Metal</option>
+              </select>
+            <label for="Genre">Genre:</label>
+              <ul class="checkbox1">
+                <li><input type="checkbox">Rock</li>
+                <li><input type="checkbox">Pop</li>
+                <li><input type="checkbox">Blues</li>
+              </ul>
+            <ul class="checkbox2">
+              <li><input type="checkbox">Classical</li>
+              <li><input type="checkbox">Jazz</li>        
+              <li><input type="checkbox">Hip hop</li>
             </ul>
-          <ul class="list2">
-            <li><input type="checkbox">Classical</li>
-            <li><input type="checkbox">Jazz</li>        
-            <li><input type="checkbox">Hip hop</li>
-          </ul>
-          </fieldset>
-          <button class="filterButton"><span class="buttonText">Filter</span></button>
-        </form>
-      </section>  
-    <section id="rightColumn">
-    </section>
+            </fieldset>
+            <button id="filterButton"><span class="buttonText">Filter</span></button>
+          </form>
+        </section>  
+      <section id="rightColumn">
+      </section>
+      </div>
     </div>
     <script type="text/javascript" src="/javascript/songs.js"></script>
   </body>
