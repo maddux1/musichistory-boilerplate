@@ -3,6 +3,14 @@ let songs = [];
 let sectionRight = document.getElementById("rightColumn");
 let addValues = document.getElementsByClassName("addField");
 
+
+// Time to put my Add Music View to the DOM instead of declaring in HTML
+document.getElementById("addMusicView").innerHTML =  
+"<p>Song name </p><input type='text' class='addField'>" +
+"<p>Artist </p><input type='text' class='addField'>" +
+"<p>Album </p><input type='text' class='addField'>" + 
+"<button id='addButton'><span class='buttonText'>Add</span></button>";
+
 // Code below attaches a listener to the button to add a new song to the list. 
 document.getElementById("addButton").addEventListener("click", function() {
     let outputString = ""; 
@@ -44,3 +52,5 @@ document.getElementById("listMusicLink").addEventListener("click", function () {
     document.getElementById("listMusicView").classList.remove("hidden");
     document.getElementById("addMusicView").classList.add("hidden");
 })
+
+

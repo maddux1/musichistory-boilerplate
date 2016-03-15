@@ -17,9 +17,6 @@ div#main {
   clear: both;
 }
 
-#listMusicView {
-}
-
 .hidden {
   display: none;
   float: left;
@@ -51,7 +48,6 @@ a:visited {
     list-style: none;
     display: inline;
 }
-
 
 /* Left column */
 #leftColumn {
