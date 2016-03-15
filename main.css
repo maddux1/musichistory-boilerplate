@@ -2,6 +2,18 @@ div#main {
   width: 90%;
   margin: 0 auto 0 auto;
 }
+
+#addMusicView {
+  margin: 50%;
+  display: hidden;
+}
+
+#listMusicView {
+  display: hidden;
+}
+
+
+/* Navigation bar */
 .navBar {
   background-color: #FFB4B0;
   border: 2px solid black;
@@ -28,7 +40,9 @@ a:visited {
     display: inline;
 }
 
-.midLeftFormBox {
+
+/* Left column */
+#leftColumn {
   float: left;
   background-color: #4DD7FA;
   box-sizing: border-box;
@@ -45,7 +59,7 @@ select {
   width: 140px;
 }
 
-.midLeftFormBox select, .midLeftFormBox input {
+#leftColumn select, #leftColumn input {
   margin: .5em 0 0 0;
 }
 
@@ -54,19 +68,15 @@ select {
     list-style-type: none;
     float: left;
     padding: 0;
-    margin: .5em 0 0 .5em;
+    margin: .5em 0 .25em .5em;
 }
 
 .list2 {
     display: inline;
     list-style-type: none;
-    float: left;
+    float: right;
     padding: 0;
-    margin: .5em 0 0 2.5em;
-}
-
-.list1 li, .list2 li {
-  margin-bottom: .25em;
+    margin: .5em 0 .25em 2.5em;
 }
 
 fieldset {
@@ -79,22 +89,22 @@ label {
 }
 
 .filterButton {
-  display: block;
-  width: 3em;
-  background: lightgrey;
-  border: 2px solid black;
-  color: black;
-  text-align: center;
+  margin: 4% 50% 4% 25%;
+  width: 10em;
+}
+
+.addButton {
+  margin: 4% 50% 4% 25%;
+  width: 10em;
+}
+
+.buttonText {
   font:1.25em/25px "Helvetica Neue", sans-serif;
-  border-radius: 7px;
-  margin: 1em auto 0 auto;
-}
+  }
 
-a.filterButton {
-  text-decoration: none;
-}
 
-.midRightFormBox {
+/* Right column with artist / song information */
+#rightColumn {
   float: right;
   background-color: #FEFAC0;
   box-sizing: border-box;
@@ -104,23 +114,14 @@ a.filterButton {
   height: 364px;
 }
 
-h2.midRightFormBox {
-  padding-left: 40px; 
-}
-
-p.midRightFormBox {
-  padding-left: 40px;
-}
-
-.midRightFormBox h2 {
-  color: #785616;
+.songInfo {
   margin-left: 5%;
   font-family: Helvetica, sans-serif;
-  font-weight: normal;
+  font-size: 1em;
 }
 
-.midRightFormBox p {
-  margin-left: 5%;
+.bandAlbum {
+  font-size: .7em;
+  display: block;
   font-family: Helvetica, sans-serif;
-  font-size: 0.8em;
 }
