@@ -39,11 +39,6 @@ a:hover {
 a:active {
   color: red;
 }
-
-a:visited {
-  color: black;
-}
-
 .navBar li {
     list-style: none;
     display: inline;
@@ -119,6 +114,13 @@ label {
   margin-left: .75%;
   border: 2px solid black;
   height: 380px;
+}
+
+#rightColumn h3, h5 {
+  display: inline-block;
+  margin-top: 2%;
+  margin-left: 2%;
+
 }
 
 .songInfo {
