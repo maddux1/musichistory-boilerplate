@@ -117,20 +117,30 @@ label {
 }
 
 #rightColumn h3, h5 {
-  display: inline-block;
   margin-top: 2%;
   margin-left: 2%;
 
 }
 
-.songInfo {
-  margin-left: 5%;
-  font-family: Helvetica, sans-serif;
-  font-size: 1.1em;
+.song {
+  display: block;
+  margin-bottom: 0;
 }
 
-.bandAlbum {
-  font-size: .7em;
-  display: block;
-  font-family: Helvetica, sans-serif;
+.artist {
+  display: inline;
+  margin-top: 0;
+}
+
+.album {
+  display: inline;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.deleteButton {
+  background-color: lightpink;
+  margin-left: 15px;
+  border-radius: 50%;
+  font-weight: bolder;
 }

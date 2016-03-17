@@ -6,11 +6,11 @@ let SongLoader = (function () {
     return {
         loadNewStuff: function (newCallback) {
             let loader = new XMLHttpRequest();
-            loader.open("GET", "newStuff.json"); //this was trying to GET songiife.js
+            loader.open("GET", "newStuff.json"); 
             loader.send();
             loader.addEventListener("load", function () {
                 newHits = JSON.parse(this.responseText).newStuffObj;
-                newCallback(newHits); // here you had passed in newCallback
+                newCallback(newHits); 
             });
         }
     }
