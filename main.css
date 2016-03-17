@@ -3,24 +3,25 @@ div#main {
   margin: 0 auto 0 auto;
 }
 
-#addMusicView {
+/*#addMusicView {
   width: 200px;
   margin-left: 25%;
   margin-top: 5%;
-}
+}*/
 
-#addMusicView input {
+/*#addMusicView input {
   float: right;
-}
-#addMusicView p {
+}*/
+
+/*#addMusicView p {
   display: inline;
   clear: both;
-}
+}*/
 
-.hidden {
+/*.hidden {
   display: none;
   float: left;
-}
+}*/
 
 /* Navigation bar */
 .navBar {
@@ -91,6 +92,8 @@ label {
     margin: 1.25em 0 0 0;
 }
 
+
+/* Buttons */
 #filterButton {
   margin: 12% 50% 4% 25%;
   width: 10em;
@@ -100,10 +103,22 @@ label {
   width: 10em;
 }
 
+  #moreButton {
+  width: 10em;
+  margin-top: 2%;
+  margin-left: 2%;
+  font-size: .75em;
+  }
+
 .buttonText {
   font:1.25em/25px "Helvetica Neue", sans-serif;
   }
 
+.deleteButton {
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 2%;
+}
 
 /* Right column with artist / song information */
 #rightColumn {
@@ -114,16 +129,26 @@ label {
   margin-left: .75%;
   border: 2px solid black;
   height: 380px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
 #rightColumn h3, h5 {
   margin-top: 2%;
   margin-left: 2%;
+}
 
+#rightColumn section {
+  display: block;
+}
+
+.newStuff {
+  border: 1px solid grey;
+  width: 70%;
+  margin: 2%;
 }
 
 .song {
-  display: block;
+  display: inline;
   margin-bottom: 0;
 }
 
@@ -138,9 +163,7 @@ label {
   margin-left: 0;
 }
 
-.deleteButton {
-  background-color: lightpink;
-  margin-left: 15px;
-  border-radius: 50%;
-  font-weight: bolder;
+.newSong {
+  margin: 1%;
+  vertical-align: middle; 
 }
