@@ -1,39 +1,42 @@
 "use strict"
-function buildDomNew (arg1) {
-    let del = document.getElementsByClassName("deleteButton");
-    let addYes = document.getElementById("newStuff");
+function buildDomNew(newHits) {
     let string = "";
-    for (let i = 0; i < arg1.length; i++) {
-        string += `<section class="newSong"><input type='button' class='deleteButton' value='X'></div><h3 class ="song">${arg1[i].song}</h3><h5 class="artist">${arg1[i].artist}</h5> | <h5 class="album">${arg1[i].album}</h5></section>`;
-    }
-    addYes.innerHTML = string;
-    for (let i = 0; i <arg1.length; i++) {
-        del[i].addEventListener('click', deleteCard);
-    }
-    function deleteCard () {
-        this.parentNode.parentNode.removeChild(this.parentNode);
-    } 
-    document.getElementById("moreButton").innerHTML = "<button id='moreButton' class='buttonText'>More ></button>";
+    for (let i = 0; i < newHits.length; i++) {
+        string += `<section class="newSong"><input type='button'`; 
+        string += `class='deleteButton' value='X'></div><h3 class ="song">`;
+        string += `${newHits[i].song}</h3><h5 class="artist">`;
+        string += `${newHits[i].artist}</h5> | <h5 class="album">`;
+        string += `${newHits[i].album}</h5></section>`;
+    };
+    document.getElementById("newStuff").innerHTML = string;
+    addDeleteButtons();
 };
 
-function buildDomClassic (arg2) {    
-    // let deleteButton = document.getElementsByClassName("deleteButton");
-    let classics = document.getElementById("classics");
+function addDeleteButtons() {
+    let del = document.getElementsByClassName("deleteButton");
+    for (let i = 0; i < del.length; i++) {
+        del[i].addEventListener('click', function(e) {
+            e.target.parentNode.parentNode.removeChild(e.target.parentNode);
+        });
+    };
+};
+
+function buildDomClassic(classicHits) {  
+    let more = document.getElementById("moreButton");
+    more.innerHTML = "<button id='moreButton' class='buttonText'>More</button>";
+    more.addEventListener("click", function() {
+    loadMore(classicHits);
+    });
+}
+
+function loadMore(classicHits) {
     let string = "";
-    document.getElementById("moreButton").addEventListener("click", loadMore);
-    // function deleteCard () {
-    //     console.log(1234 + 1234, "bacon");
-    // }
-    function loadMore () {
-        for (let i = 0; i < arg2.length; i++) {
-            string += `<section class="newSong"><input type='button' class='deleteButton' value='X'></div><h3 class ="song">${arg2[i].song}</h3><h5 class="artist">${arg2[i].artist}</h5> | <h5 class="album">${arg2[i].album}</h5></section>`;
-        }
-        // for (let i = 0; i <arg2.length; i++) {
-        //     deleteButton[i].addEventListener('click', deleteCard);
-        //     deleteButton[i].classList.add("hi");
-        // }
+    let classics = document.getElementById("classics");
+    for (let i = 0; i < classicHits.length; i++) {
+        string += `<section class="newSong"><input type='button' class='deleteButton' value='X'></div><h3 class ="song">${classicHits[i].song}</h3><h5 class="artist">${classicHits[i].artist}</h5> | <h5 class="album">${classicHits[i].album}</h5></section>`;
+    };
     classics.innerHTML = string;
-    }
+    addDeleteButtons();
 };
 
 SongLoader.loadNewStuff(buildDomNew);

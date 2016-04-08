@@ -3,25 +3,25 @@ div#main {
   margin: 0 auto 0 auto;
 }
 
-/*#addMusicView {
+#addMusicView {
   width: 200px;
   margin-left: 25%;
   margin-top: 5%;
-}*/
+}
 
-/*#addMusicView input {
+#addMusicView input {
   float: right;
-}*/
+}
 
-/*#addMusicView p {
+#addMusicView p {
   display: inline;
   clear: both;
-}*/
+}
 
-/*.hidden {
+.hidden {
   display: none;
   float: left;
-}*/
+}
 
 /* Navigation bar */
 .navBar {
@@ -103,12 +103,11 @@ label {
   width: 10em;
 }
 
-  #moreButton {
+#moreButton {
   width: 10em;
   margin-top: 2%;
   margin-left: 2%;
-  font-size: .75em;
-  }
+}
 
 .buttonText {
   font:1.25em/25px "Helvetica Neue", sans-serif;
