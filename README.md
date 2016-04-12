@@ -13,6 +13,9 @@ Practice exercise as part of work with Nashville Software School. Learning to bu
 
 - jQuery
 
+##Screenshot
+![Finished Product](https://raw.githubusercontent.com/madduxTim/musichistory-boilerplate/version-5/screenshot/Screen%20Shot%202016-04-12%20at%2010.20.06%20AM.png)
+
 ## How to run: 
 ```
 http-server -p 5656
