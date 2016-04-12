@@ -3,26 +3,6 @@ div#main {
   margin: 0 auto 0 auto;
 }
 
-#addMusicView {
-  width: 200px;
-  margin-left: 25%;
-  margin-top: 5%;
-}
-
-#addMusicView input {
-  float: right;
-}
-
-#addMusicView p {
-  display: inline;
-  clear: both;
-}
-
-.hidden {
-  display: none;
-  float: left;
-}
-
 /* Navigation bar */
 .navBar {
   background-color: #FFB4B0;
@@ -33,13 +13,6 @@ div#main {
   font-size: 14px;
 }
 
-a:hover {
-  color: green;
-}
-
-a:active {
-  color: red;
-}
 .navBar li {
     list-style: none;
     display: inline;
@@ -57,6 +30,15 @@ a:active {
   height: 380px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;  
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  margin: 1.25em 0 0 0;
 }
 
 select {
@@ -83,23 +65,9 @@ select {
     margin: .5em 0 .25em 0em;
 }
 
-fieldset {
-  border: none;
-}
-
-label {
-  display: block;
-    margin: 1.25em 0 0 0;
-}
-
-
 /* Buttons */
 #filterButton {
   margin: 12% 50% 4% 25%;
-  width: 10em;
-}
-
-#addButton {
   width: 10em;
 }
 
@@ -109,15 +77,11 @@ label {
   margin-left: 2%;
 }
 
-.buttonText {
-  font:1.25em/25px "Helvetica Neue", sans-serif;
-  }
-
 .deleteButton {
   background-color: red;
   border-radius: 50%;
-  margin-left: 2%;
-}
+/*  display: inline;
+*/}
 
 /* Right column with artist / song information */
 #rightColumn {
@@ -140,29 +104,10 @@ label {
   display: block;
 }
 
-.newStuff {
-  border: 1px solid grey;
-  width: 70%;
-  margin: 2%;
-}
-
-.song {
+#rightColumn div {
   display: inline;
-  margin-bottom: 0;
-}
-
-.artist {
-  display: inline;
-  margin-top: 0;
-}
-
-.album {
-  display: inline;
-  margin-top: 0;
-  margin-left: 0;
 }
 
 .newSong {
-  margin: 1%;
-  vertical-align: middle; 
+  margin: 3%;
 }
