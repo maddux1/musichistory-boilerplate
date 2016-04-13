@@ -23,7 +23,6 @@ function addDeleteButtons() {
 
 function buildDomClassic(classicHits) {  
     let more = document.getElementById("moreButton");
-    more.innerHTML = "<button id='moreButton' class='buttonText'>More</button>";
     more.addEventListener("click", function() {
     loadMore(classicHits);
     });

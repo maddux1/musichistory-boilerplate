@@ -107,6 +107,7 @@ label {
   width: 10em;
   margin-top: 2%;
   margin-left: 2%;
+  font: .75em/25px "Helvetica Neue", sans-serif;
 }
 
 .buttonText {
