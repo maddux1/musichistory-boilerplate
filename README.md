@@ -11,7 +11,12 @@ Practice exercise as part of work with Nashville Software School. Learning to bu
 
 ##Lessons learned / reinforced
 
-- jQuery
+- installing javascript validation - Gulp
+- Immediately Invoked Function Expressions 
+- private functions, JSON data manipulation
+
+##Screenshot
+![Finished products:](https://raw.githubusercontent.com/madduxTim/PROJECTNAME/master/screenshot/screenshot.png)
 
 ## How to run: 
 ```
