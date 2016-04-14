@@ -17,4 +17,4 @@ When the user clicks on "List Music" in the naviation bar, the Add Music View sh
 Once the user fills out the song form and clicks the add button, you should collect all values from the input fields, add the song to your array of songs, and update the song list in the DOM.
 
 ##Screenshot
-(https://raw.githubusercontent.com/madduxTim/musichistory-boilerplate/version-3/screenshot/Screen%20Shot%202016-04-14%20at%203.11.26%20PM.png)
+[The finished product:](https://raw.githubusercontent.com/madduxTim/musichistory-boilerplate/version-3/screenshot/Screen%20Shot%202016-04-14%20at%203.11.26%20PM.png)
