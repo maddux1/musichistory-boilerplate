@@ -15,3 +15,6 @@ The Add Music View should not appear when the user first visits your page. The s
 When the user clicks on "Add Music" in the navigation bar, the List Music View should be hidden, and the Add Music View should be shown (see example wireframe).
 When the user clicks on "List Music" in the naviation bar, the Add Music View should be hidden, and the List Music View should be shown (see example wireframe).
 Once the user fills out the song form and clicks the add button, you should collect all values from the input fields, add the song to your array of songs, and update the song list in the DOM.
+
+##Screenshot
+(https://raw.githubusercontent.com/madduxTim/musichistory-boilerplate/version-3/screenshot/Screen%20Shot%202016-04-14%20at%203.11.26%20PM.png)
