@@ -3,24 +3,17 @@ div#main {
   margin: 0 auto 0 auto;
 }
 
+/* Everything here is for the 'Add Music Tab' */
 #addMusicView {
   width: 200px;
   margin-left: 25%;
-  margin-top: 5%;
-}
-
-#addMusicView input {
-  float: right;
-}
-
-#addMusicView p {
-  display: inline;
-  clear: both;
+  margin-top: 3%;
+  border: 2px solid black;
+  padding: 1%;
 }
 
 .hidden {
   display: none;
-  float: left;
 }
 
 /* Navigation bar */
@@ -34,12 +27,10 @@ div#main {
 }
 
 a:hover {
-  color: green;
+  color: red;
+  text-decoration: underline;
 }
 
-a:active {
-  color: red;
-}
 .navBar li {
     list-style: none;
     display: inline;
@@ -101,6 +92,8 @@ label {
 
 #addButton {
   width: 10em;
+  margin: 16px auto;
+
 }
 
 #moreButton {

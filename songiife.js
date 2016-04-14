@@ -1,5 +1,5 @@
 "use strict"
-function buildDomNew(newHits) {
+function buildNewMusicList(newHits) {
     let string = "";
     for (let i = 0; i < newHits.length; i++) {
         string += `<section class="newSong"><input type='button'`; 
@@ -34,9 +34,9 @@ function loadMore(classicHits) {
     for (let i = 0; i < classicHits.length; i++) {
         string += `<section class="newSong"><input type='button' class='deleteButton' value='X'></div><h3 class ="song">${classicHits[i].song}</h3><h5 class="artist">${classicHits[i].artist}</h5> | <h5 class="album">${classicHits[i].album}</h5></section>`;
     };
-    classics.innerHTML = string;
+    classics.innerHTML += string;
     addDeleteButtons();
 };
 
-SongLoader.loadNewStuff(buildDomNew);
+SongLoader.loadNewStuff(buildNewMusicList);
 SongLoader.loadClassics(buildDomClassic);
