@@ -1,0 +1,19 @@
+{
+  "name": "musichistory",
+  "version": "1.0.0",
+  "description": "##Description  This is version 4 of a single project that gets updated with new stuff everytime there is a major milestone.",
+  "main": "Songloader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madduxTim/musichistory-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madduxTim/musichistory-boilerplate/issues"
+  },
+  "homepage": "https://github.com/madduxTim/musichistory-boilerplate#readme"
+}

@@ -1,0 +1,1 @@
+{"/Users/timmaddux/workspace/front_end_milestones/musichistory/gulpfile.js":{"sha1":"85aeefd37b1ab2d7ce562317d27c1acaf0f66768","tasks":{"default":{"name":"default","dependencies":"lint watch"},"watch":{"name":"watch","dependencies":""},"lint":{"name":"lint","dependencies":""}}}}

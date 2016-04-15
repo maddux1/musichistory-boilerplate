@@ -20,6 +20,7 @@ When the user clicks that button, load the songs from the second JSON file and a
 - private functions
 - Immediately Invoked Function Expressions
 - XHR calls 
+- Gulp javascript automation
 
 ##Screenshot
 ![Finished producted:](https://raw.githubusercontent.com/madduxTim/PROJECTNAME/master/screenshot/FILENAME.png)
