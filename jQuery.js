@@ -1,10 +1,10 @@
 "use strict"
 
-$.ajax({
-    url: "classics.json"
-}).done(function(data) {
-    buildDomClassics(data);
-});
+// $.ajax({
+//     url: "classics.json"
+// }).done(function(data) {
+//     buildDomClassics(data);
+// });
 
 function buildDomClassics(songList){
     for (let i = 0; i < songList.classicsObj.length; i++) {
@@ -14,11 +14,11 @@ function buildDomClassics(songList){
     addDeleteButtons();
 };
 
-$.ajax({
-    url: "newStuff.json"
-}).done(function(data) {
-    buildDomNewStuff(data);
-});
+// $.ajax({
+//     url: "newStuff.json"
+// }).done(function(data) {
+//     buildDomNewStuff(data);
+// });
 
 function buildDomNewStuff(songs) {
     let more = $("#moreButton");
@@ -35,11 +35,11 @@ function loadNew(songList){
     addDeleteButtons();
 };
 
-function addDeleteButtons() {
-    $(".deleteButton").click(function() {
-        $(this.parentNode.remove(this));
-    });
-};
+// function addDeleteButtons() {
+//     $(".deleteButton").click(function() {
+//         $(this.parentNode.remove(this));
+//     });
+// };
 
 
 

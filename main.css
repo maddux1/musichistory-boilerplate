@@ -3,6 +3,19 @@ div#main {
   margin: 0 auto 0 auto;
 }
 
+/* Everything here is for the 'Add Music Tab' */
+#addMusicView {
+  width: 200px;
+  margin-left: 25%;
+  margin-top: 3%;
+  border: 2px solid black;
+  padding: 1%;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Navigation bar */
 .navBar {
   background-color: #FFB4B0;
@@ -11,6 +24,11 @@ div#main {
   width: 90%;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 .navBar li {
@@ -30,15 +48,6 @@ div#main {
   height: 380px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;  
-}
-
-fieldset {
-  border: none;
-}
-
-label {
-  display: block;
-  margin: 1.25em 0 0 0;
 }
 
 select {
@@ -65,23 +74,44 @@ select {
     margin: .5em 0 .25em 0em;
 }
 
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+    margin: 1.25em 0 0 0;
+}
+
+
 /* Buttons */
 #filterButton {
   margin: 12% 50% 4% 25%;
   width: 10em;
 }
 
+#addButton {
+  width: 10em;
+  margin: 16px auto;
+
+}
+
 #moreButton {
   width: 10em;
   margin-top: 2%;
   margin-left: 2%;
+  font: .75em/25px "Helvetica Neue", sans-serif;
 }
+
+.buttonText {
+  font:1.25em/25px "Helvetica Neue", sans-serif;
+  }
 
 .deleteButton {
   background-color: red;
   border-radius: 50%;
-/*  display: inline;
-*/}
+  margin-left: 2%;
+}
 
 /* Right column with artist / song information */
 #rightColumn {
@@ -104,10 +134,29 @@ select {
   display: block;
 }
 
-#rightColumn div {
+.newStuff {
+  border: 1px solid grey;
+  width: 70%;
+  margin: 2%;
+}
+
+.song {
   display: inline;
+  margin-bottom: 0;
+}
+
+.artist {
+  display: inline;
+  margin-top: 0;
+}
+
+.album {
+  display: inline;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 .newSong {
-  margin: 3%;
+  margin: 1%;
+  vertical-align: middle; 
 }

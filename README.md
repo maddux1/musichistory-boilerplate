@@ -11,17 +11,14 @@ Practice exercise as part of work with Nashville Software School. Learning to bu
 
 ##Lessons learned / reinforced
 
-- installing javascript validation - Gulp
+- jQuery / AJAX
 - Immediately Invoked Function Expressions 
 - private functions, JSON data manipulation
-
-##Screenshot
-![Finished products:](https://raw.githubusercontent.com/madduxTim/PROJECTNAME/master/screenshot/screenshot.png)
 
 ## How to run: 
 ```
 http-server -p 5656
 ```
 This will show at: 
-`http://localhost:5656
+`http://localhost:5656s
 `
