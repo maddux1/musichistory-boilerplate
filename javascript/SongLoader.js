@@ -25,5 +25,5 @@ var SongLoader = (function () {
         getClassicHits: function () {
             return classicHits;
         }
-    }
+    };
 })();
