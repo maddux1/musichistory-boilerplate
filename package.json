@@ -1,0 +1,27 @@
+{
+  "name": "musichistory",
+  "version": "1.0.0",
+  "description": "##Description ``` Practice exercise as part of work with Nashville Software School. Learning to build applications. ```",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "jshint": "^2.9.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-watch": "^4.3.5",
+    "jshint-stylish": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madduxTim/musichistory-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madduxTim/musichistory-boilerplate/issues"
+  },
+  "homepage": "https://github.com/madduxTim/musichistory-boilerplate#readme"
+}

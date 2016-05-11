@@ -1,4 +1,4 @@
-#NSS-Exercise-Music History 5
+#NSS-Exercise-Music History 7
 
 ##Description
 ```
@@ -7,13 +7,11 @@ Practice exercise as part of work with Nashville Software School. Learning to bu
 
 ##Instructions
 
-- Take Music History and remove all the plain old Javascript DOM references and replace with jQuery. 
+- All your current CSS should be converted into SASS, and you must use SASS from this point forward. 
 
 ##Lessons learned / reinforced
 
-- jQuery / AJAX
-- Immediately Invoked Function Expressions 
-- private functions, JSON data manipulation
+- SASS
 
 ## How to run: 
 ```
