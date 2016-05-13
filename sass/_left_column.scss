@@ -1,0 +1,28 @@
+#listMusicView {
+  margin-top: 1%;
+}
+
+#leftColumn {
+  background-color: #4DD7FA;
+  border: 2px solid black;
+  height: 380px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;  
+}
+
+#checkboxes {
+  display: block;
+  margin: 3% auto;
+}
+
+.checkbox1, .checkbox2 {
+    display: inline;
+    list-style-type: none;
+    margin: 0 5%;
+    padding: 0;
+    width: 80px;
+}
+
+label {
+  display: block;
+}

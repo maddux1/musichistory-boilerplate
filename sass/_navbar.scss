@@ -1,0 +1,17 @@
+#navBar {
+  margin-top: 2%;
+  background-color: #FFB4B0;
+  border: 2px solid black;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+#navBar a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+#navBar li {
+  list-style: none;
+  display: inline;
+}

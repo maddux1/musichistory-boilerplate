@@ -1,0 +1,27 @@
+#rightColumn {
+  background-color: #FEFAC0;
+  border: 2px solid black;
+  height: 380px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  overflow: scroll;
+  padding: 2%;
+  // margin-left: 1%; /* - - THIS BORKS LAYOUT, BUT I WANT A GUTTER BETWEEN THE TWO COLUMNS - - */
+}
+
+#rightColumn section {
+  display: block;
+}
+
+.newStuff {
+  border: 1px solid grey;
+  width: 70%;
+}
+
+.song, .artist, .album {
+  display: inline;
+}
+
+.newSong {
+  // margin: 1%;
+  // vertical-align: middle; 
+}

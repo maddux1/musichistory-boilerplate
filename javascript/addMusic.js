@@ -1,21 +1,22 @@
 "use strict";
 var SongLoader = (function(originalSongLoader) {
-    originalSongLoader.addMusicIIFE = function () {
+    originalSongLoader.addMusic = function () {
         let string = "";
-        string += "<p>Song name </p><input type='text' id='songInput' class='addField'>" +
+        string += "<div id='addMusicForm' class='col-md-4 col-md-offset-4'><p>Song name" +
+        "</p><input type='text' id='songInput' class='addField'>" +
         "<p>Artist </p><input type='text' id='artistInput' class='addField'>" +
         "<p>Album </p><input type='text' id='albumInput' class='addField'>" + 
-        "<button id='addButton'><span class='buttonText'>Add</span></button>";
-        $("#addMusicView").append(string); 
-    },
+        "<button id='addButton' class='btn btn-default button'>Add</button></div>";
+        $("#addMusicView").append(string);
+    };
     originalSongLoader.newMusicButton = function () {
         let songInput = $("#songInput");
         let artistInput = $("#artistInput");
         let albumInput = $("#albumInput");
         $("#addButton").click(function() {
             let string = ""; 
-                string += `<section class="newSong"><input type='button'`; 
-                string += `class='deleteButton' value='X'></div><h3 class ="song">`;
+                string += `<section class="newSong"><button type='button'`; 
+                string += `class='btn btn-primary btn-xs deleteButton glyphicon glyphicon-trash'></button><h3 class ="song">`;
                 string += songInput.val();
                 string += "</h3><h5 class='artist'>";
                 string += artistInput.val();
@@ -24,20 +25,20 @@ var SongLoader = (function(originalSongLoader) {
                 string += "</h5></section>";
             $("#classics").append(string);
             SongLoader.addDeleteButtons();
-            $("#listMusicView").removeClass("hidden");
-            $("#addMusicView").addClass("hidden");
+            $("#listMusicView").show();
+            $("#addMusicView").hide();
         });
-    },
+    };
     originalSongLoader.addMusicFunctionality = function () {
-        $("#addMusicView").addClass("hidden");
+        $("#addMusicView").hide();
         $("#addMusicLink").click(function () {
-            $("#listMusicView").addClass("hidden");
-            $("#addMusicView").removeClass("hidden");
+            $("#listMusicView").hide();
+            $("#addMusicView").show();
         });
         $("#listMusicLink").click(function () {
-            $("#listMusicView").removeClass("hidden");
-            $("#addMusicView").addClass("hidden");
+            $("#listMusicView").show();
+            $("#addMusicView").hide();
         });
-    }
+    };
     return originalSongLoader;
 })(SongLoader || {});

@@ -1,3 +1,4 @@
+
 "use strict";
 var SongLoader = (function () {
     let newHits = [];
@@ -7,16 +8,18 @@ var SongLoader = (function () {
             $.ajax({
                 url: "newStuff.json"
             }).done(function(data) {
-                newHits = data.newStuffObj;
+                newHits.push(data.newStuffObj);
                 newCallback(data.newStuffObj);
+                console.log(newHits);
             });
         },
         loadClassics: function (classicCallback) {
             $.ajax({
                 url: "classics.json"
             }).done(function(data) {
-                classicHits = data.classicsObj;
+                classicHits.push(data.classicsObj);
                 classicCallback(data.classicsObj);
+                console.log(classicHits);
             });
         },
         getNewHits: function () {
@@ -24,6 +27,6 @@ var SongLoader = (function () {
         },
         getClassicHits: function () {
             return classicHits;
-        }
+        } 
     };
-})();
+})(SongLoader || {});

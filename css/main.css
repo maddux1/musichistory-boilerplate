@@ -1,134 +1,72 @@
-div#main {
-  width: 90%;
-  margin: 0 auto 0 auto; }
-
-/* Everything here is for the 'Add Music Tab' */
-#addMusicView {
-  width: 200px;
-  margin-left: 25%;
-  margin-top: 3%;
-  border: 2px solid black;
-  padding: 1%; }
-
-.hidden {
-  display: none; }
-
-/* Navigation bar */
-.navBar {
+#navBar {
+  margin-top: 2%;
   background-color: #FFB4B0;
   border: 2px solid black;
-  margin: 2.5% auto 1.5% auto;
-  width: 90%;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px; }
 
-a:hover {
+#navBar a:hover {
   color: red;
   text-decoration: underline; }
 
-.navBar li {
+#navBar li {
   list-style: none;
   display: inline; }
 
-/* Left column */
+.button {
+  display: block;
+  width: 80px;
+  background-color: lightgrey;
+  margin: 3% auto; }
+
+.deleteButton {
+  background-color: red;
+  border-radius: 50%; }
+
+#listMusicView {
+  margin-top: 1%; }
+
 #leftColumn {
-  float: left;
   background-color: #4DD7FA;
-  box-sizing: border-box;
-  margin-left: .75%;
-  width: 27.25%;
   border: 2px solid black;
-  margin: 0 auto 0 auto;
   height: 380px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px; }
 
-select {
-  width: 140px; }
+#checkboxes {
+  display: block;
+  margin: 3% auto; }
 
-#leftColumn select, #leftColumn input {
-  margin: .5em 0 0 0; }
-
-.checkbox1 {
+.checkbox1, .checkbox2 {
   display: inline;
   list-style-type: none;
-  float: left;
+  margin: 0 5%;
   padding: 0;
-  margin: .5em 0 .25em .5em; }
-
-.checkbox2 {
-  display: inline;
-  list-style-type: none;
-  float: right;
-  padding: 0;
-  margin: .5em 0 .25em 0em; }
-
-fieldset {
-  border: none; }
+  width: 80px; }
 
 label {
-  display: block;
-  margin: 1.25em 0 0 0; }
+  display: block; }
 
-/* Buttons */
-#filterButton {
-  margin: 12% 50% 4% 25%;
-  width: 10em; }
-
-#addButton {
-  width: 10em;
-  margin: 16px auto; }
-
-#moreButton {
-  width: 10em;
-  margin-top: 2%;
-  margin-left: 2%;
-  font: .75em/25px "Helvetica Neue", sans-serif; }
-
-.buttonText {
-  font: 1.25em/25px "Helvetica Neue", sans-serif; }
-
-.deleteButton {
-  background-color: red;
-  border-radius: 50%;
-  margin-left: 2%; }
-
-/* Right column with artist / song information */
 #rightColumn {
-  float: right;
   background-color: #FEFAC0;
-  box-sizing: border-box;
-  width: 71.25%;
-  margin-left: .75%;
   border: 2px solid black;
   height: 380px;
-  font-family: "Helvetica Neue", Helvetica, sans-serif; }
-
-#rightColumn h3, h5 {
-  margin-top: 2%;
-  margin-left: 2%; }
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  overflow: scroll;
+  padding: 2%; }
 
 #rightColumn section {
   display: block; }
 
 .newStuff {
   border: 1px solid grey;
-  width: 70%;
-  margin: 2%; }
+  width: 70%; }
 
-.song {
-  display: inline;
-  margin-bottom: 0; }
+.song, .artist, .album {
+  display: inline; }
 
-.artist {
-  display: inline;
-  margin-top: 0; }
-
-.album {
-  display: inline;
-  margin-top: 0;
-  margin-left: 0; }
-
-.newSong {
-  margin: 1%;
-  vertical-align: middle; }
+/* - - - - - - - Add Music View - - - - - - - */
+#addMusicForm {
+  margin-top: 2%;
+  border: 2px solid black;
+  padding: 1%; }
