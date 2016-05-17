@@ -8,20 +8,13 @@
   // margin-left: 1%; /* - - THIS BORKS LAYOUT, BUT I WANT A GUTTER BETWEEN THE TWO COLUMNS - - */
 }
 
-#rightColumn section {
-  display: block;
-}
-
-.newStuff {
-  border: 1px solid grey;
-  width: 70%;
-}
 
 .song, .artist, .album {
   display: inline;
+  margin-left: 2%;
 }
 
 .newSong {
-  // margin: 1%;
-  // vertical-align: middle; 
+  margin: 1%;
+  vertical-align: middle; 
 }

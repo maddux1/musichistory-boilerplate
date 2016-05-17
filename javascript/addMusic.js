@@ -1,6 +1,7 @@
 "use strict";
-var SongLoader = (function(originalSongLoader) {
-    originalSongLoader.addMusic = function () {
+
+// <-- - - - - - - FORM TO ADD A NEW SONG - - - - - - - - --> 
+function addMusicViewForm() {
         let string = "";
         string += "<div id='addMusicForm' class='col-md-4 col-md-offset-4'><p>Song name" +
         "</p><input type='text' id='songInput' class='addField'>" +
@@ -8,37 +9,75 @@ var SongLoader = (function(originalSongLoader) {
         "<p>Album </p><input type='text' id='albumInput' class='addField'>" + 
         "<button id='addButton' class='btn btn-default button'>Add</button></div>";
         $("#addMusicView").append(string);
-    };
-    originalSongLoader.newMusicButton = function () {
-        let songInput = $("#songInput");
-        let artistInput = $("#artistInput");
-        let albumInput = $("#albumInput");
-        $("#addButton").click(function() {
-            let string = ""; 
-                string += `<section class="newSong"><button type='button'`; 
-                string += `class='btn btn-primary btn-xs deleteButton glyphicon glyphicon-trash'></button><h3 class ="song">`;
-                string += songInput.val();
-                string += "</h3><h5 class='artist'>";
-                string += artistInput.val();
-                string += "</h5> | <h5 class='album'>";
-                string += albumInput.val();
-                string += "</h5></section>";
-            $("#classics").append(string);
-            SongLoader.addDeleteButtons();
-            $("#listMusicView").show();
-            $("#addMusicView").hide();
-        });
-    };
-    originalSongLoader.addMusicFunctionality = function () {
+    }
+
+// <-- - - - - TOGGLING BTW LIST MUSIC VIEW / ADD MUSIC VIEW - - - - > 
+function addMusicViewToggle() {
         $("#addMusicView").hide();
         $("#addMusicLink").click(function () {
+            $("#addButton").attr("edit_id", "");
             $("#listMusicView").hide();
-            $("#addMusicView").show();
+            $("#addMusicView").fadeIn();
         });
         $("#listMusicLink").click(function () {
-            $("#listMusicView").show();
+            loadMusicList(newMusicToDOM); // <--- REFRESHES MUSIC LIST
+            $("#listMusicView").fadeIn();
             $("#addMusicView").hide();
+            emptyAddForm();
         });
+    }
+
+// <-- - - - - - - TESTS TO SEE IF THIS IS A COPY OR ADD METHOD - - - - - --> 
+$("#addMusicView").on("click", "#addButton", function(){
+    if ($(this).attr("edit_id") === "") {
+        addSong();
+    } else {
+        editSong();
+    }
+});
+
+// <-- - - - - - ADDS NEW SONG TO FIREBASE - - - - - - - - -->
+function addSong() {
+    let newSong = {
+    "album": $("#albumInput").val(), 
+    "artist": $("#artistInput").val(), 
+    "song": $("#songInput").val()
     };
-    return originalSongLoader;
-})(SongLoader || {});
+    $.ajax({
+        url:"https://music-history-tdm.firebaseio.com/newStuffObj/.json",
+        type: "POST",
+        data: JSON.stringify(newSong)
+    }).done(function(){ 
+        loadMusicList(newMusicToDOM); // <--- REFRESHES MUSIC LIST 
+        $("#addMusicView").hide();
+        $("#listMusicView").fadeIn();
+        emptyAddForm(); // <--- EMPTIES INPUT VALUES 
+    });
+};
+
+// <-- - - - - - EDITS EXISTING SONG IN FIREBASE - - - - - -->
+function editSong() {
+    let newSong = {
+    "album": $("#albumInput").val(), 
+    "artist": $("#artistInput").val(), 
+    "song": $("#songInput").val()
+    };
+    $.ajax({
+        url:`https://music-history-tdm.firebaseio.com/newStuffObj/${$("#addButton").attr("edit_id")}.json`,
+        type: "PUT",
+        data: JSON.stringify(newSong)
+    }).done(function(){ 
+        loadMusicList(newMusicToDOM); // <--- REFRESHES MUSIC LIST 
+        $("#addMusicView").hide();
+        $("#listMusicView").fadeIn();
+        $("#addButton").attr("edit_id", "");
+        emptyAddForm(); // <---- EMPTIES INPUT VALUES
+    });
+};
+
+// <-- - - - CLEARS ALL ADDMUSICVIEW INPUT VALUES - - - - -->
+function emptyAddForm() {
+    $("#albumInput").val(""); 
+    $("#artistInput").val("");
+    $("#songInput").val("");
+}

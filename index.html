@@ -29,8 +29,9 @@
         <div id="listMusicView" class="row">
 
             <!-- - - - - - LEFT COLUMN- - - - - -->
-            <section id="leftColumn" class="container col-md-3">
-                <label for="Song">Song Length:</label> <input type="range"> 
+            <article id="leftColumn" class="container col-md-3">
+                <label for="Song">Song Length:</label> 
+                    <input type="range"> 
                 <label for="Artist">Artist:</label>
                 <select>
                     <option>Tom Petty</option>
@@ -61,13 +62,12 @@
                     </ul>
                 </div>
                 <button id="filterButton" class="btn btn-default button"><span class="buttonText">Filter</span></button>
-            </section>
+            </article>
 
             <!-- - - - - - RIGHT COLUMN- - - - - -->
-            <section id="rightColumn" class="container col-md-9">
-                <section id="newStuff"></section>
-                <section id="classics"></section><button id="moreButton" class="btn btn-default button">More</button>
-            </section>
+            <article id="rightColumn" class="container col-md-9">
+                <section id="musicList"></section>
+            </article>
 
         </div> <!-- - - - - END OF LISTMUSICVIEW - - - - --> 
 
@@ -75,9 +75,9 @@
 
     <!-- - - - - - SCRIPPIES - - - - - - - -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-    <script src="/javascript/Songloader.js" type="text/javascript"></script> 
-    <script src="/javascript/loadContent.js" type="text/javascript"></script> 
+    <script src="/javascript/songLoader.js" type="text/javascript"></script> 
+    <script src="/javascript/contentToDOM.js" type="text/javascript"></script> 
     <script src="/javascript/addMusic.js" type="text/javascript"></script> 
-    <script src="/javascript/functionality.js" type="text/javascript"></script>
+    <script src="/javascript/editAndDelete.js" type="text/javascript"></script>
 </body>
 </html>

@@ -17,10 +17,15 @@
   display: block;
   width: 80px;
   background-color: lightgrey;
-  margin: 3% auto; }
+  margin: 10% auto; }
 
 .deleteButton {
-  background-color: red;
+  background-color: #FFB4B0;
+  border-radius: 50%;
+  margin-right: 1%; }
+
+.editButton {
+  background-color: #4DD7FA;
   border-radius: 50%; }
 
 #listMusicView {
@@ -55,15 +60,13 @@ label {
   overflow: scroll;
   padding: 2%; }
 
-#rightColumn section {
-  display: block; }
-
-.newStuff {
-  border: 1px solid grey;
-  width: 70%; }
-
 .song, .artist, .album {
-  display: inline; }
+  display: inline;
+  margin-left: 2%; }
+
+.newSong {
+  margin: 1%;
+  vertical-align: middle; }
 
 /* - - - - - - - Add Music View - - - - - - - */
 #addMusicForm {

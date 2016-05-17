@@ -1,32 +1,16 @@
-
 "use strict";
-var SongLoader = (function () {
-    let newHits = [];
-    let classicHits = [];
-    return {
-        loadNewStuff: function (newCallback) {
-            $.ajax({
-                url: "newStuff.json"
-            }).done(function(data) {
-                newHits.push(data.newStuffObj);
-                newCallback(data.newStuffObj);
-                console.log(newHits);
-            });
-        },
-        loadClassics: function (classicCallback) {
-            $.ajax({
-                url: "classics.json"
-            }).done(function(data) {
-                classicHits.push(data.classicsObj);
-                classicCallback(data.classicsObj);
-                console.log(classicHits);
-            });
-        },
-        getNewHits: function () {
-            return newHits;
-        },
-        getClassicHits: function () {
-            return classicHits;
-        } 
-    };
-})(SongLoader || {});
+
+// <-- - - - - - CALLS DATA FROM FIREBASE - - - - - - --> 
+function loadMusicList(resolve){
+    $.ajax({
+        url: "https://music-history-tdm.firebaseio.com/newStuffObj/.json"
+    }).done(function(data) {
+        resolve(data);
+    });
+}
+
+// <-- - - - - EVENT LISTENERS AND OTHER SHIZ - - - - - --> 
+$(window).load(function() {
+    addMusicViewForm(); // <-- - - - - - ADD MUSIC VIEW FORM 
+    addMusicViewToggle(); // <-- - - - - ...AND FUNCTIONALITY 
+});
